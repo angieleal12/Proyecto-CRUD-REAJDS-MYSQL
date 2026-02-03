@@ -12,7 +12,6 @@ const connection = mysql.createPool({
     queueLimit: 0
 });
 
-// 2. Probamos la conexión con la lógica corregida
 connection.getConnection((err, conn) => {
     if (err) {
         console.error('❌ Error al conectar la base de datos:');
